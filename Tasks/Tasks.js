@@ -1,5 +1,99 @@
+function Calculator(){
+    this.read=function(){
+        this.a=+prompt("Enter A value: ");
+        this.b=+prompt("Enter B Value: ");
+    };
+    this.sum=function(){
+        return this.a+this.b;
+    };
+    this.mul=function(){
+        return this.a*this.b;
+    };
+}
+let calculator=new Calculator();
+calculator.read();
+alert("Sum: "+calculator.sum());
+alert("Mul: "+calculator.mul());
+/*function User(name){
+    this.name=name;
+    this.isAdmin=true;
+}
+let user=new User("lohiiiii");
+alert(user.name);
+alert(user.isAdmin);
 
+/*
+
+let calculator={
+    read:function(){
+        this.a=+prompt("Enter A value: ");
+        this.b=+prompt("Enter B Value: ");
+    },
+    sum:function(){
+        return this.a+this.b;
+    },
+    mul:function(){
+        return this.a*this.b;
+    }
+}
+calculator.read();
+alert(calculator.sum());
+alert(calculator.mul());
+
+
+/*let obj={
+    name:"kaavi",
+    age:19,
+    sayHi:function(){
+        alert(this.name);
+    },
+};
+function make(){
+    return alert(5+5);
+}
+obj.make=make;
+obj.make();
+obj.sayHi();
+
+
+/*
+let ob={};
+ob.name="John";
+ob.surname="Smith"
+ob.name="Pete";
+for(let key in ob){
+    console.log(key);
+    console.log(ob[key]);
+    
+}
+delete ob.name;
+console.log(ob.name);
+
+
+let us={
+    age:100,
+    name:"lohiiiii"
+};
+let key="place"
+alert(key in us);
+
+
+function makeUser(name,age){
+    return {
+        name,
+        age,
+    };
+}
+let user=makeUser("lohiiiii",100);
+alert(user.age);
+
+let fruit=prompt("Which fruit to buy?","apple");
+let bag={
+    [fruit]:5
+};
+alert(bag.apple);*/
 /*task 36-40*/
+/*
 var a=5;
 if(a%2==0){
     document.getElementById("task36").innerHTML="a is even";
@@ -26,6 +120,7 @@ var score=90;
 document.getElementById("task40").innerHTML="student A: "+(score>50?"pass":"fail");
 
 /*task 41-45*/
+/*
 function logicalOperator(){
     console.log("true && true is "+(true && true));
     console.log("true && false is "+(true && false));
@@ -47,6 +142,7 @@ let x=10;
 document.getElementById("task42").innerHTML=x>5 && x<=10?`${x} is within range 5 to 10`:`${x} is not within range 5 to 10`;
 
 /*task 46-50*/
+/*
 function addition(a,b){
     return "Addition "+(a+b);
 }
@@ -76,7 +172,7 @@ document.getElementById("task50ii").innerHTML="with argument "+defaultParameter(
 
 /*task 50-55*/
 
-
+/*
 let func=(name)=>{
     return `Hello,${name}`;
 }
@@ -112,3 +208,4 @@ let multiplyTraditonal={
 multiplyTraditonal.myObject1(5);
 multiplyTraditonal.myObject2(5);
 
+*/
